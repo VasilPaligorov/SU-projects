@@ -4,18 +4,18 @@ using namespace std;
 
 int main() {
     //  T1
-    int day, year;
-    cout << "Enter day: ";
-    cin >> day;
+    int month, year;
+    cout << "Enter month: ";
+    cin >> month;
     cout << "Enter year: ";
     cin >> year;
 
 
-    if (day == 1 || day == 3 || day == 5 || day == 7 || day == 8 || day == 10 || day == 12)
+    if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
         cout << "This month has 31 days";
-    else if (day == 4 || day == 6 || day == 9 || day == 11)
+        else if (month == 4 || month == 6 || month == 9 || month == 11)
         cout << "This month has 30 days";
-    else if (day == 2) {
+    else if (month == 2) {
         bool isLeap = year % 4 == 0 && (year % 100 != 0 || year % 400 == 0);
         cout << (isLeap ? "This month has 29 days" : "This month has 28 days");
     } else
