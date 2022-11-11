@@ -51,9 +51,9 @@ void printFirstNPalindromes(int number) {
 
 bool isPowOf2(int number) {
     while (number % 2 == 0 && number)
-        number /= 10;
+        number /= 2;
 
-    return !number;
+    return number;
 }
 
 bool isPow(int number, int number2) {
