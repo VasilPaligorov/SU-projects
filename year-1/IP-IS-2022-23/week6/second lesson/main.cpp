@@ -38,9 +38,7 @@ int reverseNumber(int number) {
 }
 
 bool isPalindrome(int number) {
-    int reversedNumber = reverseNumber(number);
-
-    return reversedNumber == number;
+    return reverseNumber(number) == number;
 }
 
 void printFirstNPalindromes(int number) {
