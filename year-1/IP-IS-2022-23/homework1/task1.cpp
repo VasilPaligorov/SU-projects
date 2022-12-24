@@ -15,10 +15,10 @@ void setMessage(char message[], char **matrix, int matrixRows, int matrixCols, i
 }
 
 void createMatrix(char **&matrix, int matrixCols, int matrixRows) {
-    matrix = new char *[matrixCols];
+    matrix = new char *[matrixRows];
 
     for (int i = 0; i < matrixRows; ++i)
-        matrix[i] = new char[matrixRows + 1];
+        matrix[i] = new char[matrixCols + 1];
 }
 
 void deleteMatrix(char **&matrix, int matrixRows) {
@@ -63,7 +63,7 @@ int fillMatrix(const char message[], char **&matrix, int matrixCols, int matrixR
                 k++;
             }
         }
-        matrix[i][matrixRows + 1] = '\0';
+        matrix[i][matrixCols] = '\0';
     }
     return xCounter;
 }
