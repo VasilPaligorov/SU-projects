@@ -20,9 +20,7 @@ void setPosition(char position[]) {
         cin.getline(position, 3);
         if (!validatePosition(position))
             cout << "Invalid table position!" << endl;
-        else
-            break;
-    } while (true);
+    } while (!validatePosition(position));
 }
 
 int enterMoves(char moves[]) {
