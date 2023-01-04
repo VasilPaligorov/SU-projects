@@ -6,7 +6,7 @@ using namespace std;
 
 void play(int myNumber) {
     int number;
-    cout << myNumber << "Let's play guess the number!\n";
+    cout << "Let's play guess the number!\n";
     for (int i = 3; i; --i) {
         cout << "Enter number between 0 and 2147483647: ";
         cin >> number;
@@ -19,7 +19,6 @@ void play(int myNumber) {
             return;
         }
     }
-
     cout << "Sorry, you've run out of tries. Our number was " << myNumber;
 }
 
