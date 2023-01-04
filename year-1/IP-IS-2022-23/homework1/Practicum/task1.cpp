@@ -1,6 +1,4 @@
 #include <iostream>
-#include <ctime>
-#include <random>
 
 using namespace std;
 
@@ -19,6 +17,7 @@ void play(int myNumber) {
             return;
         }
     }
+    
     cout << "Sorry, you've run out of tries. Our number was " << myNumber;
 }
 
